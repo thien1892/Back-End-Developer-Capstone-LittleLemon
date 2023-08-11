@@ -2,6 +2,11 @@
 ## Django, DRF, CSS, HTML, JavaScript
 
 ```
+project-level: littlelemon/
+app-level: LittleLemonAPI/, restaurant/
+```
+
+```
 SupperUser:
     username: admin
     pass: admin
@@ -34,4 +39,38 @@ Another User (username - pass - token):
     GET, PUT, PATCH, DELETE booking items: http://127.0.0.1:8000/restaurant/booking/tables/1
 ```
 
-
+```
+#tree -L 2
+├── LittleLemonAPI
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   ├── models.py
+│   ├── serializers.py
+│   ├── urls.py
+│   └── views.py
+├── db.sqlite3
+├── littlelemon
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── tests
+│   ├── urls.py
+│   └── wsgi.py
+├── manage.py
+└── restaurant
+    ├── __init__.py
+    ├── __pycache__
+    ├── admin.py
+    ├── apps.py
+    ├── migrations
+    ├── models.py
+    ├── serializers.py
+    ├── static
+    ├── templates
+    ├── urls.py
+    └── views.py
+```
