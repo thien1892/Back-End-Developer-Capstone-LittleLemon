@@ -19,7 +19,7 @@ Another User (username - pass - token):
 
 
 ```
-1. User - Auth (with djoser)
+    1. User - Auth (with djoser)
     Create User: http://127.0.0.1:8000/auth/users/
     POST Token: http://127.0.0.1:8000/auth/token/login/
                 http://127.0.0.1:8000/api/api-token-auth/
@@ -40,13 +40,14 @@ Another User (username - pass - token):
 ```
 
 ```
-#tree -L 2
+#tree -L 3
 ├── LittleLemonAPI
 │   ├── __init__.py
-│   ├── __pycache__
 │   ├── admin.py
 │   ├── apps.py
 │   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   └── __init__.py
 │   ├── models.py
 │   ├── serializers.py
 │   ├── urls.py
@@ -54,23 +55,30 @@ Another User (username - pass - token):
 ├── db.sqlite3
 ├── littlelemon
 │   ├── __init__.py
-│   ├── __pycache__
 │   ├── asgi.py
 │   ├── settings.py
 │   ├── tests
+│   │   ├── __init__.py
+│   │   ├── test_models.py
+│   │   └── test_views.py
 │   ├── urls.py
 │   └── wsgi.py
 ├── manage.py
 └── restaurant
     ├── __init__.py
-    ├── __pycache__
     ├── admin.py
     ├── apps.py
     ├── migrations
+    │   ├── 0001_initial.py
+    │   └── __init__.py
     ├── models.py
     ├── serializers.py
     ├── static
+    │   ├── css
+    │   └── img
     ├── templates
+    │   ├── index.html
+    │   └── index_lab.html
     ├── urls.py
     └── views.py
 ```
